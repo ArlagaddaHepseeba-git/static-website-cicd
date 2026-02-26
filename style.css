@@ -1,12 +1,110 @@
-body {
-  font-family: Arial;
-  background-color: #232f3e;
-  text-align: center;
-  padding: 80px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+}
+
+header {
+  background: linear-gradient(135deg, #232f3e, #ff9900);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  color: #f0f0f0;
+}
+
+.pipeline {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.pipeline h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
   color: #ff9900;
 }
-p {
-  color: #ffffff;
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.step {
+  background-color: #161b22;
+  border: 1px solid #ff9900;
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 220px;
+}
+
+.step .icon {
+  font-size: 40px;
+}
+
+.step h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #ff9900;
+}
+
+.step p {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.arrow {
+  font-size: 36px;
+  color: #ff9900;
+}
+
+.skills {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #161b22;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ff9900;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badge {
+  background-color: #ff9900;
+  color: #0d1117;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #232f3e;
+  color: #aaaaaa;
+  font-size: 14px;
 }
