@@ -1,7 +1,7 @@
 # 🚀 Automated Deployment of Static Website on AWS S3 with CI/CD using Jenkins & GitHub
 
 ## 📌 Project Description
-###### In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins.  
+ In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins.  
 
 ## 🏗️ Architecture Flow
 
@@ -67,7 +67,8 @@ sudo systemctl enable jenkins
 ```
 <img width="1920" height="1080" alt="EC2 server" src="https://github.com/user-attachments/assets/cbe8b82e-16d5-4f84-9bc3-b355e26d1619" />
 
-<img width="1920" height="1080" alt="server" src="https://github.com/user-attachments/assets/2b7ff150-989f-4a06-960c-a8856e9a5cd6"
+<img width="1920" height="1080" alt="server" src="https://github.com/user-attachments/assets/054a06c3-e524-4f94-bbe7-c0f9852191b0" />
+
 
 
 ### 🪣Step 3: Creating the S3 Bucket
@@ -78,9 +79,9 @@ sudo systemctl enable jenkins
 
 * Disable “Block Public Access”
 
-Enable Static Website Hosting
+* Enable Static Website Hosting
 
-Upload HTML files to test manually
+* Upload HTML files to test manually
 
 <img width="1920" height="1080" alt="s3 bucket running" src="https://github.com/user-attachments/assets/ba185830-c92c-41a6-8386-41efb60d3a1d" />
 
