@@ -1,9 +1,8 @@
 # 🚀 Automated Deployment of Static Website on AWS S3 with CI/CD using Jenkins & GitHub
 
 ## 📌 Project Description
-In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins.
+* In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins. *
 
----
 
 ## 🏗️ Architecture Flow
 
@@ -20,7 +19,6 @@ In this project I built a CI/CD pipeline that automatically deploys a static web
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/358219da-4da6-4a2a-bc60-51a326b9425a" />
 
 
----
 
 ## 🛠️ Tech Stack
 | Tool | Purpose |
@@ -33,7 +31,7 @@ In this project I built a CI/CD pipeline that automatically deploys a static web
 | AWS CLI | Running S3 commands from EC2 |
 | Linux | Setting up and configuring the server |
 
----
+
 
 ## ⚙️ Prerequisites
 - AWS Account
@@ -43,7 +41,7 @@ In this project I built a CI/CD pipeline that automatically deploys a static web
 - AWS CLI configured on EC2
 - S3 Bucket with static website hosting enabled
 
----
+
 
 ## 📁 Project Structure
 ```
@@ -54,7 +52,7 @@ static-website-cicd/
 └── README.md        # Project documentation
 ```
 
----
+
 
 ## 🚀 Step by Step Setup
 
@@ -92,6 +90,7 @@ Upload HTML files to test manually
 <img width="1920" height="1080" alt="s3 bucket running" src="https://github.com/user-attachments/assets/ba185830-c92c-41a6-8386-41efb60d3a1d" />
 
 <img width="1920" height="1080" alt="s3" src="https://github.com/user-attachments/assets/3e5d1480-f31c-493f-ad9d-ecfe08c794e0" />
+
 
 <img width="1920" height="1080" alt="s3 bucket" src="https://github.com/user-attachments/assets/85b44135-1e9d-4668-a66a-b02751bdaa1f" />
 
@@ -162,7 +161,7 @@ pipeline {
 <img width="1920" height="1080" alt="deployment sucess" src="https://github.com/user-attachments/assets/39f8d319-382e-42a6-964b-f4512e2bfd31" />
 
 
----
+
 
 ## 🌐 Live Website
 - Website is hosted on AWS S3 Static Website Hosting
@@ -170,7 +169,7 @@ pipeline {
 
   <img width="1920" height="1080" alt="final website output" src="https://github.com/user-attachments/assets/b25e30e5-4161-408c-99e4-45c7362edf47" />
 
----
+
 
 
 ## ✅ What I Learned
