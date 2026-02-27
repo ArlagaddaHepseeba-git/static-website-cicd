@@ -1,8 +1,7 @@
 # 🚀 Automated Deployment of Static Website on AWS S3 with CI/CD using Jenkins & GitHub
 
 ## 📌 Project Description
-* In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins. *
-
+###### In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins.  
 
 ## 🏗️ Architecture Flow
 
@@ -19,7 +18,6 @@
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/358219da-4da6-4a2a-bc60-51a326b9425a" />
 
 
-
 ## 🛠️ Tech Stack
 | Tool | Purpose |
 |---|---|
@@ -32,7 +30,6 @@
 | Linux | Setting up and configuring the server |
 
 
-
 ## ⚙️ Prerequisites
 - AWS Account
 - GitHub Account
@@ -40,7 +37,6 @@
 - Jenkins installed on EC2
 - AWS CLI configured on EC2
 - S3 Bucket with static website hosting enabled
-
 
 
 ## 📁 Project Structure
@@ -51,8 +47,6 @@ static-website-cicd/
 ├── Jenkinsfile      # Jenkins pipeline script
 └── README.md        # Project documentation
 ```
-
-
 
 ## 🚀 Step by Step Setup
 
@@ -75,13 +69,14 @@ sudo systemctl enable jenkins
 
 <img width="1920" height="1080" alt="server" src="https://github.com/user-attachments/assets/2b7ff150-989f-4a06-960c-a8856e9a5cd6"
 
+
 ### 🪣Step 3: Creating the S3 Bucket
 
-Open AWS Console → S3
+* Open AWS Console → S3
 
-Create bucket → name it: new-hepsi-bucket
+* Create bucket → name it: new-hepsi-bucket
 
-Disable “Block Public Access”
+* Disable “Block Public Access”
 
 Enable Static Website Hosting
 
@@ -92,7 +87,8 @@ Upload HTML files to test manually
 <img width="1920" height="1080" alt="s3" src="https://github.com/user-attachments/assets/3e5d1480-f31c-493f-ad9d-ecfe08c794e0" />
 
 
-<img width="1920" height="1080" alt="s3 bucket" src="https://github.com/user-attachments/assets/85b44135-1e9d-4668-a66a-b02751bdaa1f" />
+<img width="1920" height="1080" alt="s3 bucket" src="https://github.com/user-attachments/assets/9f7dd170-2219-4176-8807-f66dc74e3c38" />
+
 
 #### website URL:
 
@@ -123,8 +119,6 @@ Upload HTML files to test manually
 
   <img width="1920" height="1080" alt="webhook url" src="https://github.com/user-attachments/assets/e9a659f0-70ab-452f-ad07-b60b1677e32d" />
 
-
----
 
 ## 📝 Jenkinsfile
 ```groovy
@@ -162,13 +156,11 @@ pipeline {
 
 
 
-
 ## 🌐 Live Website
 - Website is hosted on AWS S3 Static Website Hosting
 - URL: `http://new-hepsi-bucket.s3-website.ap-south-1.amazonaws.com`
 
   <img width="1920" height="1080" alt="final website output" src="https://github.com/user-attachments/assets/b25e30e5-4161-408c-99e4-45c7362edf47" />
-
 
 
 
