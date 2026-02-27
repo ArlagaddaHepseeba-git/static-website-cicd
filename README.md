@@ -1,4 +1,4 @@
-# 📌 Automated Deployment of Static Website on AWS S3 with CI/CD using Jenkins & GitHub
+# 🚀 Automated Deployment of Static Website on AWS S3 with CI/CD using Jenkins & GitHub
 
 ## 📌 Project Description
 In this project I built a CI/CD pipeline that automatically deploys a static website to AWS S3 whenever I push code to GitHub. I set up Jenkins on an AWS EC2 instance which acts as the automation server. When I make any change to the website and push it to GitHub, Jenkins automatically picks up the change and deploys the updated website to S3. The website is hosted on S3 static website hosting and is publicly accessible via a URL. This project helped me understand how real world deployment automation works using AWS and Jenkins.
@@ -63,7 +63,7 @@ static-website-cicd/
 - Instance Type: t2.medium
 - Security Group Ports: 22, 80, 8080
 
-### Step 2: Install Jenkins on EC2
+### 🖥️ Step 2: Install Jenkins on EC2
 ```bash
 sudo dnf update -y
 sudo dnf install java-17-amazon-corretto -y
@@ -77,7 +77,7 @@ sudo systemctl enable jenkins
 
 <img width="1920" height="1080" alt="server" src="https://github.com/user-attachments/assets/2b7ff150-989f-4a06-960c-a8856e9a5cd6"
 
-### Step 3:🪣 Creating the S3 Bucket
+### 🪣Step 3: Creating the S3 Bucket
 
 Open AWS Console → S3
 
@@ -100,7 +100,7 @@ Upload HTML files to test manually
 👉 http://new-hepsi-bucket.s3-website.ap-south-1.amazonaws.com
 
 
-### Step 4: Configure AWS Access
+### 🧩Step 4: Configure AWS Access
 - Created IAM role with AmazonS3FullAccess permission
 - Attached the role to EC2 instance
 - Configured AWS CLI on EC2 with credentials
@@ -110,7 +110,7 @@ Upload HTML files to test manually
 
 
 
-### Step 5: Create Jenkins Pipeline
+### 🔧Step 5: Create Jenkins Pipeline
 - Installed GitHub Integration plugin in Jenkins
 - Created a new Pipeline job
 - Connected GitHub repository to Jenkins
